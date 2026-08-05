@@ -1,4 +1,4 @@
-import "./about.css";
+import "./About.css";
 
 
 import aboutHero from "../assets/about-hero.jpg";

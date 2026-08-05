@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./gallery.css";
+import "./Gallery.css";
 
 import hero from "../assets/gallery/gallery-hero.jpg";
 

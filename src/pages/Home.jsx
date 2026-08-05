@@ -1,4 +1,4 @@
-import "./home.css";
+import "./Home.css";
 
 
 import heroMain from "../assets/hero-main.jpg";

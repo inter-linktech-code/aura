@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
 import logo from "../assets/logo.png";
-import "./navbar.css";
+import "./Navbar.css";
 
 
 export default function Navbar() {

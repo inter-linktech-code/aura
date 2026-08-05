@@ -1,4 +1,4 @@
-import "./services.css";
+import "./Services.css";
 
 
 import servicesHero from "../assets/services-hero.jpg";

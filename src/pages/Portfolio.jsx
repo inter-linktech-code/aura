@@ -1,4 +1,4 @@
-import "./portfolio.css";
+import "./Portfolio.css";
 
 
 import portfolio1 from "../assets/portfolio-1.jpg";
