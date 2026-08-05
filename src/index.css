@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* =========================
+   AURA DESIGN SYSTEM
+========================= */
+
+:root {
+  --bg: #0B0B0F;
+  --card: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --purple: #6C63FF;
+  --gold: #F4B400;
+  --white: #FFFFFF;
+}
+
+/* Base */
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container system */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* Glass card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 60px rgba(108, 99, 255, 0.25);
+}
+
+/* Hover lift */
+.lift {
+  transition: all 0.3s ease;
+}
+
+.lift:hover {
+  transform: translateY(-6px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--purple);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.4);
+}
+
+.btn-outline {
+  border: 1px solid var(--border);
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  border-color: var(--white);
+}

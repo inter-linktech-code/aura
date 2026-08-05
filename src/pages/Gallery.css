@@ -1,0 +1,578 @@
+/* ==========================================
+   AURA DESIGN HUB
+   PREMIUM GALLERY PAGE
+========================================== */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+
+.gallery-page {
+
+  background:#F7F3EC;
+
+  color:#151515;
+
+  font-family:"Inter", sans-serif;
+
+  overflow:hidden;
+
+}
+
+
+
+.gallery-page * {
+
+  box-sizing:border-box;
+
+}
+
+
+
+.gallery-page img {
+
+  width:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+}
+
+
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+
+.gallery-hero {
+
+  height:85vh;
+
+  min-height:650px;
+
+  position:relative;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+}
+
+
+
+.gallery-hero img {
+
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+
+
+.gallery-overlay {
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+  linear-gradient(
+
+    rgba(0,0,0,.65),
+
+    rgba(0,0,0,.45)
+
+  );
+
+}
+
+
+
+.gallery-hero-content {
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:900px;
+
+  padding:0 25px;
+
+  color:white;
+
+}
+
+
+
+.gallery-hero-content span {
+
+  text-transform:uppercase;
+
+  letter-spacing:4px;
+
+  font-size:.85rem;
+
+  color:#D1AE6B;
+
+  font-weight:600;
+
+}
+
+
+
+.gallery-hero-content h1 {
+
+  font-size:clamp(3rem,7vw,6rem);
+
+  line-height:1;
+
+  letter-spacing:-3px;
+
+  margin:25px 0;
+
+}
+
+
+
+.gallery-hero-content p {
+
+  max-width:700px;
+
+  margin:auto;
+
+  color:rgba(255,255,255,.85);
+
+  font-size:1.15rem;
+
+  line-height:1.8;
+
+}
+
+
+
+
+
+/* ==========================================
+   GALLERY SECTION
+========================================== */
+
+
+.gallery-section {
+
+  padding:120px 40px;
+
+}
+
+
+
+.gallery-container {
+
+  max-width:1400px;
+
+  margin:auto;
+
+}
+
+
+
+.section-heading {
+
+  text-align:center;
+
+  max-width:850px;
+
+  margin:0 auto 70px;
+
+}
+
+
+
+.section-heading span {
+
+  color:#D1AE6B;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+  font-weight:600;
+
+}
+
+
+
+.section-heading h2 {
+
+  font-size:clamp(2.5rem,5vw,4rem);
+
+  letter-spacing:-2px;
+
+  margin:20px 0;
+
+}
+
+
+
+.section-heading p {
+
+  color:#666;
+
+  font-size:1.1rem;
+
+  line-height:1.8;
+
+}
+
+
+
+
+
+/* ==========================================
+   MASONRY GALLERY
+========================================== */
+
+
+.gallery-grid {
+
+  columns:4 300px;
+
+  column-gap:25px;
+
+}
+
+
+
+.gallery-card {
+
+  position:relative;
+
+  margin-bottom:25px;
+
+  overflow:hidden;
+
+  border-radius:25px;
+
+  cursor:pointer;
+
+  break-inside:avoid;
+
+  background:white;
+
+}
+
+
+
+.gallery-card img {
+
+  transition:.6s ease;
+
+}
+
+
+
+.gallery-card:hover img {
+
+  transform:scale(1.08);
+
+}
+
+
+
+
+
+.gallery-hover {
+
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:
+
+  rgba(0,0,0,.45);
+
+  opacity:0;
+
+  transition:.4s ease;
+
+}
+
+
+
+.gallery-hover span {
+
+  color:white;
+
+  border:1px solid rgba(255,255,255,.5);
+
+  padding:14px 30px;
+
+  border-radius:50px;
+
+  font-weight:600;
+
+}
+
+
+
+.gallery-card:hover .gallery-hover {
+
+  opacity:1;
+
+}
+
+
+
+
+
+/* ==========================================
+   LIGHTBOX
+========================================== */
+
+
+.lightbox {
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,.9);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  z-index:9999;
+
+  padding:40px;
+
+}
+
+
+
+.lightbox img {
+
+  max-width:90%;
+
+  max-height:90vh;
+
+  border-radius:20px;
+
+}
+
+
+
+.lightbox-close {
+
+  position:absolute;
+
+  top:30px;
+
+  right:40px;
+
+  background:none;
+
+  border:none;
+
+  color:white;
+
+  font-size:50px;
+
+  cursor:pointer;
+
+}
+
+
+
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+
+.gallery-cta {
+
+  margin:50px 40px 100px;
+
+  padding:100px 30px;
+
+  background:#151515;
+
+  border-radius:35px;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+
+
+.gallery-cta h2 {
+
+  font-size:clamp(2.5rem,5vw,4rem);
+
+  margin-bottom:25px;
+
+}
+
+
+
+.gallery-cta p {
+
+  color:rgba(255,255,255,.75);
+
+  font-size:1.1rem;
+
+  margin-bottom:40px;
+
+}
+
+
+
+.gallery-cta a {
+
+  display:inline-block;
+
+  padding:16px 40px;
+
+  background:#D1AE6B;
+
+  color:white;
+
+  text-decoration:none;
+
+  border-radius:50px;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+
+
+.gallery-cta a:hover {
+
+  transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:900px){
+
+
+.gallery-section {
+
+  padding:80px 25px;
+
+}
+
+
+.gallery-grid {
+
+  columns:2 250px;
+
+}
+
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.gallery-hero {
+
+  min-height:550px;
+
+}
+
+
+
+.gallery-hero-content h1 {
+
+  letter-spacing:-1px;
+
+}
+
+
+
+.gallery-section {
+
+  padding:70px 20px;
+
+}
+
+
+
+.gallery-grid {
+
+  columns:1;
+
+}
+
+
+
+.gallery-cta {
+
+  margin:20px;
+
+  padding:70px 20px;
+
+}
+
+
+
+.lightbox {
+
+  padding:20px;
+
+}
+
+
+
+.lightbox-close {
+
+  right:20px;
+
+}
+
+
+}

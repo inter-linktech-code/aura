@@ -1,0 +1,1109 @@
+/* ==========================================
+   AURA DESIGN HUB
+   PREMIUM HOME PAGE
+========================================== */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+
+.home {
+
+background:#F7F3EC;
+
+color:#151515;
+
+font-family:"Inter",sans-serif;
+
+overflow:hidden;
+
+}
+
+
+
+.home * {
+
+box-sizing:border-box;
+
+}
+
+
+
+.home img {
+
+width:100%;
+
+display:block;
+
+object-fit:cover;
+
+}
+
+
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+
+.home-hero {
+
+height:95vh;
+
+min-height:750px;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.home-hero img {
+
+position:absolute;
+
+inset:0;
+
+height:100%;
+
+}
+
+
+
+.hero-overlay {
+
+
+position:absolute;
+
+inset:0;
+
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(0,0,0,.45),
+
+rgba(0,0,0,.75)
+
+);
+
+
+}
+
+
+
+.hero-content {
+
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+padding:30px;
+
+
+}
+
+
+
+.hero-content span {
+
+
+color:#D1AE6B;
+
+letter-spacing:5px;
+
+font-size:.85rem;
+
+font-weight:700;
+
+
+}
+
+
+
+.hero-content h1 {
+
+
+font-size:clamp(3rem,7vw,6rem);
+
+line-height:1;
+
+letter-spacing:-3px;
+
+margin:30px 0;
+
+
+}
+
+
+
+.hero-content h1 span {
+
+
+color:#D1AE6B;
+
+letter-spacing:-3px;
+
+font-size:inherit;
+
+
+}
+
+
+
+.hero-content p {
+
+
+max-width:700px;
+
+margin:auto;
+
+font-size:1.15rem;
+
+line-height:1.8;
+
+color:rgba(255,255,255,.85);
+
+
+}
+
+
+
+
+.hero-actions {
+
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin-top:40px;
+
+
+}
+
+
+
+.hero-actions a {
+
+
+padding:16px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+
+}
+
+
+
+.hero-actions a:first-child {
+
+
+background:#D1AE6B;
+
+color:white;
+
+
+}
+
+
+
+.hero-actions a:last-child {
+
+
+border:1px solid white;
+
+color:white;
+
+
+}
+
+
+
+.hero-actions a:hover {
+
+
+transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+.hero-features {
+
+
+display:flex;
+
+justify-content:center;
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+
+
+.hero-features div {
+
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-size:.95rem;
+
+
+}
+
+
+
+.hero-features svg {
+
+
+color:#D1AE6B;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+
+.stats {
+
+
+padding:80px 30px;
+
+background:white;
+
+
+}
+
+
+
+.stats-grid {
+
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+text-align:center;
+
+gap:30px;
+
+
+}
+
+
+
+.stats h2 {
+
+
+font-size:3rem;
+
+margin:0;
+
+color:#151515;
+
+
+}
+
+
+
+.stats p {
+
+
+color:#777;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+
+.home-about {
+
+
+max-width:1200px;
+
+margin:auto;
+
+padding:120px 40px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+
+}
+
+
+
+.about-image img {
+
+
+height:600px;
+
+border-radius:30px;
+
+
+}
+
+
+
+.about-content span,
+
+
+.section-title span {
+
+
+color:#D1AE6B;
+
+letter-spacing:4px;
+
+font-size:.85rem;
+
+font-weight:700;
+
+
+}
+
+
+
+.about-content h2 {
+
+
+font-size:clamp(2.5rem,5vw,4rem);
+
+line-height:1.1;
+
+letter-spacing:-2px;
+
+
+}
+
+
+
+.about-content p {
+
+
+font-size:1.1rem;
+
+line-height:1.9;
+
+color:#666;
+
+
+}
+
+
+
+.about-content a,
+
+
+.founder-text a {
+
+
+display:inline-block;
+
+margin-top:25px;
+
+background:#151515;
+
+color:white;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ SERVICES
+========================================== */
+
+
+.home-services {
+
+
+background:white;
+
+padding:120px 40px;
+
+
+}
+
+
+
+.section-title {
+
+
+text-align:center;
+
+margin-bottom:60px;
+
+
+}
+
+
+
+.section-title h2 {
+
+
+font-size:clamp(2.5rem,5vw,4rem);
+
+margin-top:20px;
+
+letter-spacing:-2px;
+
+
+}
+
+
+
+
+.service-grid {
+
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+
+}
+
+
+
+.service-box {
+
+
+padding:40px;
+
+background:#F7F3EC;
+
+border-radius:25px;
+
+transition:.4s;
+
+
+}
+
+
+
+.service-box svg {
+
+
+font-size:35px;
+
+color:#D1AE6B;
+
+
+}
+
+
+
+.service-box:hover {
+
+
+transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ WHY
+========================================== */
+
+
+.why-aura {
+
+
+padding:120px 40px;
+
+
+}
+
+
+
+.why-grid {
+
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+
+}
+
+
+
+.why-grid div {
+
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ PORTFOLIO
+========================================== */
+
+
+.portfolio-preview {
+
+
+padding:120px 40px;
+
+background:white;
+
+
+}
+
+
+
+.portfolio-grid {
+
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+
+}
+
+
+
+.portfolio-grid img {
+
+
+height:350px;
+
+border-radius:25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ FOUNDER
+========================================== */
+
+
+.founder-home {
+
+
+max-width:1200px;
+
+margin:auto;
+
+padding:120px 40px;
+
+display:grid;
+
+grid-template-columns:420px 1fr;
+
+gap:80px;
+
+align-items:center;
+
+
+}
+
+
+
+.founder-image img {
+
+
+border-radius:30px;
+
+
+}
+
+
+
+.founder-text h2 {
+
+
+font-size:3.5rem;
+
+
+}
+
+
+
+.founder-text p {
+
+
+line-height:1.8;
+
+color:#666;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ QUOTE
+========================================== */
+
+
+.quote-section {
+
+
+padding:120px 30px;
+
+background:#151515;
+
+color:white;
+
+text-align:center;
+
+
+}
+
+
+
+.quote-section h2 {
+
+
+font-size:clamp(2rem,5vw,4rem);
+
+max-width:900px;
+
+margin:auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ CTA
+========================================== */
+
+
+.home-cta {
+
+
+margin:100px 40px;
+
+padding:100px 30px;
+
+border-radius:35px;
+
+background:#151515;
+
+color:white;
+
+text-align:center;
+
+
+}
+
+
+
+.home-cta h2 {
+
+
+font-size:clamp(2.5rem,5vw,4rem);
+
+
+}
+
+
+
+.home-cta a {
+
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 40px;
+
+background:#D1AE6B;
+
+color:white;
+
+border-radius:50px;
+
+text-decoration:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ AUTO GALLERY
+========================================== */
+
+
+.creative-slider {
+
+
+padding:120px 0;
+
+background:#F7F3EC;
+
+overflow:hidden;
+
+
+}
+
+
+
+.slider-window {
+
+
+overflow:hidden;
+
+
+}
+
+
+
+.slider-track {
+
+
+display:flex;
+
+gap:30px;
+
+width:max-content;
+
+animation:moveGallery 35s linear infinite;
+
+
+}
+
+
+
+.slider-track:hover {
+
+
+animation-play-state:paused;
+
+
+}
+
+
+
+.slider-track img {
+
+
+width:380px;
+
+height:450px;
+
+border-radius:30px;
+
+
+}
+
+
+
+@keyframes moveGallery {
+
+
+from{
+
+transform:translateX(0);
+
+}
+
+
+to{
+
+transform:translateX(-50%);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ WHATSAPP
+========================================== */
+
+
+.whatsapp {
+
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+background:#25D366;
+
+color:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+z-index:999;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+ RESPONSIVE
+========================================== */
+
+
+@media(max-width:1000px){
+
+
+.stats-grid,
+
+.service-grid,
+
+.why-grid,
+
+.portfolio-grid {
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.home-about,
+
+.founder-home {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+
+.hero-features,
+
+.hero-actions {
+
+
+flex-direction:column;
+
+align-items:center;
+
+
+}
+
+
+
+.stats-grid,
+
+.service-grid,
+
+.why-grid,
+
+.portfolio-grid {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.home-about,
+
+.founder-home {
+
+
+padding:80px 20px;
+
+
+}
+
+
+
+.slider-track img {
+
+
+width:280px;
+
+height:350px;
+
+
+}
+
+
+}
